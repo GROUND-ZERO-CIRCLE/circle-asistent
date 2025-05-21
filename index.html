@@ -3,19 +3,16 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>CIRCLE Asistent</title>
+    <title>CIRCLE Asistent (Beta)</title>
     <style>
         body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
         h1 { color: #333; }
         #chat { border: 1px solid #ccc; padding: 1rem; background: #fff; height: 400px; overflow-y: auto; }
         #userInput { width: 100%; padding: 0.5rem; margin-top: 1rem; }
-        #apiKey { width: 100%; margin-bottom: 1rem; }
     </style>
 </head>
 <body>
     <h1>CIRCLE Asistent (Beta)</h1>
-    <p>Zadej svůj OpenAI API klíč:</p>
-    <input type="password" id="apiKey" placeholder="sk-...">
     <div id="chat"></div>
     <input type="text" id="userInput" placeholder="Zeptej se na cokoliv..." onkeydown="if(event.key==='Enter') sendMessage()">
     <script src="script.js"></script>
