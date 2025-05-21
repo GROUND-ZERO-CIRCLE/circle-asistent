@@ -2,9 +2,8 @@
 async function sendMessage() {
     const input = document.getElementById("userInput");
     const chat = document.getElementById("chat");
-    const apiKey = document.getElementById("apiKey").value;
     const message = input.value;
-    if (!apiKey || !message) return;
+    if (!message) return;
 
     chat.innerHTML += `<div><strong>Ty:</strong> ${message}</div>`;
     input.value = "";
@@ -12,7 +11,7 @@ async function sendMessage() {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
-            "Authorization": `Bearer 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`,
+            "Authorization": "Bearer DOPLŇTE_SVŮJ_KLÍČ",
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
